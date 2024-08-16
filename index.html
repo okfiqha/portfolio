@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5a7763ad7c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Mahasiswa</p>
+                <h1>Hi, I'm <span>Okfiqha</span><br> Risdawati From Padang</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/picu1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, my name is Okfiqha Risdawati, i am usually called picu, i am now 20 years old and i am studying at the University PGRI Sumatera Barat. I am a 5th semester student with a GPA of 3.76. My major is Informatics Education, i am very
+                        fond of learning new things even though it is difficult, i will continue to try because it adds to my knowledge.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>May 2024 </span><br>Barista</li>
+                            <li><span>2023 - 2024</span><br>Anggota Himpunan Mahasiswa</li>
+                            <li><span>July - November 2024</span><br>Magang di PT Metro Indonesian Software</li>
+                            <li><span>2024 - 2025</span><br>Sekretaris BEM KM Universitas PGRI Sumatera Barat</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br>Sma n 1 Sijunjung</li>
+                            <li><span>2022-NOW</span><br>Universitas PGRI Sumatera Barat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------skills----------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>Figma</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2>Canva</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-php"></i>
+                    <h2>PHP</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Java script</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h2>Microsoft office (word,power point, exel)</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>FIGMA</h3>
+                        <p>online food ordering application design</p>
+                        <i class="fa-solid fa-crop"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpeg">
+                    <div class="layer">
+                        <h3>PHP & HTML</h3>
+                        <p>create CRUD student data and employee data</p>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>HTML & CSS</h3>
+                        <p>Create a portfolio website</p>
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn1">See more</a>
+        </div>
+    </div>
+
+    <!-----------contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 083852523247</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/6283852523247"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://instagram.com/onyouri__ika"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/_risolvedkitten"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/okfiqha-risdawati"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbytWOy9-woAvagXOUUvoNQiT39-8Zz0Q9mzd1x4eakIGO1rlRwbp3C7M-yxIm45PAct/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
